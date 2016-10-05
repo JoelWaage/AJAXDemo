@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using AJAXDemo.Models;
 
 namespace AJAXDemo.Controllers
 {
@@ -19,6 +20,11 @@ namespace AJAXDemo.Controllers
         public IActionResult Sum(int firstNumber, int secondNumber)
         {
             return Content((firstNumber + secondNumber).ToString(), "text/plain");
+        }
+        public IActionResult DisplayObject()
+        {
+            Destination destination = new Destination("Tokyo", "Japan", 1);
+            return Json(destination);
         }
     }
 }

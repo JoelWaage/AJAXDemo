@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C42A7B22-0004-46F8-952E-4E8FF66B2D58}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FA150C46-3134-4DD8-9121-9BEEDF26AE0C}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "AJAXDemo", "src\AJAXDemo\AJAXDemo.xproj", "{EC6529F2-09FB-4E37-936D-51FBCC298E5D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC6529F2-09FB-4E37-936D-51FBCC298E5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC6529F2-09FB-4E37-936D-51FBCC298E5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC6529F2-09FB-4E37-936D-51FBCC298E5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC6529F2-09FB-4E37-936D-51FBCC298E5D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EC6529F2-09FB-4E37-936D-51FBCC298E5D} = {C42A7B22-0004-46F8-952E-4E8FF66B2D58}
+	EndGlobalSection
+EndGlobal

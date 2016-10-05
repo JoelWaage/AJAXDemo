@@ -9,6 +9,7 @@ namespace AJAXDemo.Controllers
 {
     public class HomeController : Controller
     {
+        private AJAXDemoContext db = new AJAXDemoContext();
         public IActionResult Index()
         {
             return View();
@@ -29,6 +30,11 @@ namespace AJAXDemo.Controllers
         public IActionResult DisplayViewWithAjax()
         {
             return View();
+        }
+        public IActionResult RandomDestinationList(int destinationCount)
+        {
+            var randomDestinationList = db.Destinations.OrderBy(r => Guid.NewGuid()).Take(destinationCount);
+            return Json(randomDestinationList);
         }
     }
 }

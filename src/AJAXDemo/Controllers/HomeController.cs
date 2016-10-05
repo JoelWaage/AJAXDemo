@@ -12,5 +12,10 @@ namespace AJAXDemo.Controllers
         {
             return View();
         }
+
+        public IActionResult HelloAjax()
+        {
+            return Content("Hello from the controller!", "text/plain");
+        }
     }
 }
